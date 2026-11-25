@@ -1,0 +1,462 @@
+/* =========================================================
+   Shared look and feel. Loaded last, so it wins over Bootstrap
+   and over the older per-page stylesheets.
+   Values come from theme.css.
+========================================================= */
+
+/* ---------- Base ---------- */
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 14.5px;
+  line-height: 1.55;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.main-content h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.text-muted {
+  color: var(--muted) !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  box-shadow: none;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--primary);
+  --bs-btn-border-color: var(--primary);
+  --bs-btn-hover-bg: var(--primary-hover);
+  --bs-btn-hover-border-color: var(--primary-hover);
+  --bs-btn-active-bg: #1e40af;
+  --bs-btn-active-border-color: #1e40af;
+  --bs-btn-focus-shadow-rgb: 37, 99, 235;
+  box-shadow: var(--shadow-xs);
+}
+
+.btn-success {
+  --bs-btn-bg: #16a34a;
+  --bs-btn-border-color: #16a34a;
+  --bs-btn-hover-bg: #15803d;
+  --bs-btn-hover-border-color: #15803d;
+}
+
+.btn-danger {
+  --bs-btn-bg: #dc2626;
+  --bs-btn-border-color: #dc2626;
+  --bs-btn-hover-bg: #b91c1c;
+  --bs-btn-hover-border-color: #b91c1c;
+}
+
+.btn-outline-primary,
+.btn-outline-secondary {
+  --bs-btn-color: var(--text-soft);
+  --bs-btn-border-color: var(--border-strong);
+  --bs-btn-hover-color: var(--text);
+  --bs-btn-hover-bg: var(--slate-soft);
+  --bs-btn-hover-border-color: var(--border-strong);
+  --bs-btn-active-color: var(--text);
+  --bs-btn-active-bg: var(--slate-soft);
+  --bs-btn-active-border-color: var(--border-strong);
+}
+
+.btn-secondary {
+  --bs-btn-bg: var(--slate-soft);
+  --bs-btn-color: var(--text-soft);
+  --bs-btn-border-color: var(--border);
+  --bs-btn-hover-bg: #e2e8f0;
+  --bs-btn-hover-color: var(--text);
+  --bs-btn-hover-border-color: var(--border-strong);
+  --bs-btn-active-bg: #e2e8f0;
+  --bs-btn-active-color: var(--text);
+  --bs-btn-active-border-color: var(--border-strong);
+}
+
+/* Small buttons in table rows become quiet, tinted icon buttons */
+.btn-sm.btn-warning,
+.btn-sm.btn-danger,
+.btn-sm.btn-info {
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-border-color: transparent;
+  padding: 0.4rem 0.6rem;
+  line-height: 1;
+}
+
+.btn-sm.btn-warning {
+  --bs-btn-bg: var(--amber-soft);
+  --bs-btn-color: var(--amber);
+  --bs-btn-hover-bg: #fdecc8;
+  --bs-btn-hover-color: var(--amber);
+  --bs-btn-active-bg: #fce3ae;
+  --bs-btn-active-color: var(--amber);
+  color: var(--amber);
+}
+
+.btn-sm.btn-danger {
+  --bs-btn-bg: var(--red-soft);
+  --bs-btn-color: var(--red);
+  --bs-btn-hover-bg: #fde2e2;
+  --bs-btn-hover-color: var(--red);
+  --bs-btn-active-bg: #fcd0d0;
+  --bs-btn-active-color: var(--red);
+  color: var(--red);
+}
+
+/* ---------- Forms ---------- */
+.form-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-soft);
+  margin-bottom: 0.35rem;
+}
+
+.form-control,
+.form-select {
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  background-color: var(--surface);
+  color: var(--text);
+  font-size: 14px;
+  padding: 0.55rem 0.85rem;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: #94a3b8;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-control:disabled {
+  background-color: var(--slate-soft);
+}
+
+.form-check-input:checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* A search box sitting directly on a page should not stretch edge to edge */
+.main-content > input.form-control {
+  max-width: 420px;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-sm) !important;
+  transform: none !important;
+  transition: box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: none !important;
+}
+
+/* Summary (KPI) cards get a gentle lift in shadow only */
+.dashboard-card:hover,
+.report-card:hover,
+.issue-card:hover,
+.user-card:hover,
+.production-card:hover {
+  box-shadow: var(--shadow-md) !important;
+}
+
+.card-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ---------- Tables ---------- */
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-striped-bg: transparent;
+  --bs-table-hover-bg: var(--surface-muted);
+  --bs-table-color: var(--text-soft);
+  --bs-table-border-color: var(--border);
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+/* Bootstrap paints stripes/hover/dark headers with an inset box-shadow;
+   turn that off so our own backgrounds show. */
+.table > :not(caption) > * > * {
+  box-shadow: none !important;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.table-bordered > :not(caption) > * {
+  border-width: 0;
+}
+
+.table-bordered > :not(caption) > * > * {
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+/* Older page styles gave <thead> its own dark/blue background, which showed
+   at rounded corners. */
+.table thead {
+  background: var(--surface-muted) !important;
+}
+
+/* Inside a scroll container keep cells on one line and let the table scroll
+   sideways on small screens, instead of wrapping dates and order numbers. */
+.table-responsive .table td,
+.table-responsive .table th {
+  white-space: nowrap;
+}
+
+.table-responsive .table td.description-cell {
+  white-space: normal;
+}
+
+/* One header style for every table (older page styles used blue or black).
+   !important is deliberate: some of those page rules also use it. */
+.table thead th,
+.table > thead > tr > th {
+  background: var(--surface-muted) !important;
+  color: var(--muted) !important;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 0 !important;
+  border-bottom: 1px solid var(--border) !important;
+  white-space: nowrap;
+}
+
+.table tbody tr:hover > td {
+  background: var(--surface-muted);
+}
+
+.table tbody tr:last-child > td {
+  border-bottom: 0;
+}
+
+/* Tables placed straight on a page are framed like a card */
+.main-content > .table-responsive,
+.main-content > .table-container {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow-x: auto;
+}
+
+.main-content > table.table {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+/* ---------- Pagination ---------- */
+.pagination {
+  gap: 4px;
+}
+
+.page-link {
+  border: 1px solid var(--border);
+  border-radius: 8px !important;
+  color: var(--text-soft);
+  min-width: 36px;
+  text-align: center;
+}
+
+.page-link:hover {
+  background: var(--slate-soft);
+  color: var(--text);
+}
+
+.page-item.active .page-link {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+/* ---------- Modals ---------- */
+.modal-content {
+  --bs-modal-bg: var(--surface);
+  border: 0;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.2);
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--border);
+  padding: 18px 24px;
+}
+
+.modal-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.modal-body {
+  padding: 24px;
+}
+
+.modal-footer {
+  border-top: 1px solid var(--border);
+  padding: 14px 24px;
+}
+
+.modal-backdrop {
+  --bs-backdrop-opacity: 0.35;
+}
+
+/* ---------- Status & priority badges (single source of truth) ---------- */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* Green: good / done */
+.status-completed,
+.status-active,
+.status-in,
+.status-resolved {
+  background: var(--green-soft);
+  border-color: #ccefd9;
+  color: var(--green);
+}
+
+/* Blue: in motion */
+.status-running,
+.status-progress {
+  background: var(--primary-soft);
+  border-color: #d6e4fd;
+  color: var(--primary-hover);
+}
+
+/* Amber: waiting / low */
+.status-pending,
+.status-low {
+  background: var(--amber-soft);
+  border-color: #fbe3b5;
+  color: var(--amber);
+}
+
+/* Red: needs attention */
+.status-delayed,
+.status-inactive,
+.status-open {
+  background: var(--red-soft);
+  border-color: #fbd5d5;
+  color: var(--red);
+}
+
+/* Sky: scheduled */
+.status-scheduled {
+  background: #f0f9ff;
+  border-color: #cdeafc;
+  color: #0369a1;
+}
+
+/* Neutral */
+.status-default,
+.status-out {
+  background: var(--slate-soft);
+  border-color: var(--border);
+  color: #475569;
+}
+
+.priority-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.priority-high {
+  background: var(--red-soft);
+  color: var(--red);
+}
+
+.priority-medium {
+  background: var(--amber-soft);
+  color: var(--amber);
+}
+
+.priority-low {
+  background: var(--primary-soft);
+  color: var(--primary-hover);
+}
+
+.priority-default {
+  background: var(--slate-soft);
+  color: #475569;
+}
+
+.badge {
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* ---------- Progress bars ---------- */
+.progress {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--slate-soft);
+}
+
+/* ---------- Toasts ---------- */
+.Toastify__toast {
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  font-family: var(--font);
+  font-size: 14px;
+}

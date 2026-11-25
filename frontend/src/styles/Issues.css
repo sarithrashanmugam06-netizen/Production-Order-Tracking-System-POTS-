@@ -1,0 +1,232 @@
+/* ==========================================
+   Page Header
+========================================== */
+
+.page-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1E293B;
+}
+
+.page-subtitle {
+    color: #64748B;
+    font-size: 15px;
+}
+
+/* ==========================================
+   Issue Cards
+========================================== */
+
+.issue-card{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+    min-height:120px;
+}
+
+.issue-card:hover{
+    transform:translateY(-4px);
+}
+
+.issue-card .card-body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:120px;
+}
+
+.issue-card-title{
+    font: size 80px;
+    font-weight:600;
+    color:#575a5f;
+    margin-bottom:8px;
+}
+
+.issue-card-value{
+    font-size:40px;
+    font-weight:700;
+    margin:0;
+}
+
+
+/* ==========================================
+   Search Box
+========================================== */
+
+.form-control {
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+/* ==========================================
+   Table
+========================================== */
+
+.issue-table{
+    table-layout: fixed;
+    border-radius:12px;
+    overflow:hidden;
+    background:#fff;
+}
+
+.issue-table thead th{
+    background:#2563EB;
+    color:#fff;
+    border:none;
+    font-weight:600;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.issue-table td{
+    vertical-align:middle;
+    padding:12px 10px;
+}
+
+.issue-table tbody tr:hover{
+    background:#F8FAFC;
+}
+
+
+/* ==========================================
+   Buttons
+========================================== */
+
+.btn-warning {
+    color: white;
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+/* ==========================================
+   Modal
+========================================== */
+
+.modal-content {
+    border: none;
+    border-radius: 18px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.modal-footer {
+    border-top: 1px solid #E2E8F0;
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:768px){
+
+.issue-card h2{
+
+font-size:30px;
+
+}
+
+.issue-icon{
+
+width:55px;
+
+height:55px;
+
+font-size:24px;
+
+}
+
+}
+
+.description-cell{
+    white-space:normal;
+    word-break:break-word;
+    line-height:1.4;
+}
+
+.table thead th{
+    border:none;
+}
+
+.table tbody tr:hover{
+    background:#f8fafc;
+}
+
+/* ==========================
+   ISSUE STATUS
+========================== */
+
+.status-open{
+    background:#FEE2E2;
+    color:#DC2626;
+}
+
+.status-progress{
+    background:#DBEAFE;
+    color:#2563EB;
+}
+
+.status-resolved{
+    background:#DCFCE7;
+    color:#15803D;
+}
+
+.status-default{
+    background:#E5E7EB;
+    color:#6B7280;
+}
+
+/* ==========================================
+   COLUMN WIDTHS
+========================================== */
+
+.issue-table th:nth-child(1),
+.issue-table td:nth-child(1){
+    width:60px;
+    text-align:center;
+}
+
+.issue-table th:nth-child(2),
+.issue-table td:nth-child(2){
+    width:90px;
+    text-align:center;
+}
+
+.issue-table th:nth-child(3),
+.issue-table td:nth-child(3){
+    width:170px;
+}
+
+.issue-table th:nth-child(4),
+.issue-table td:nth-child(4){
+    width:250px;
+}
+
+.issue-table th:nth-child(5),
+.issue-table td:nth-child(5){
+    width:90px;
+    text-align:center;
+}
+
+.issue-table th:nth-child(6),
+.issue-table td:nth-child(6){
+    width:120px;
+    text-align:center;
+}
+
+.issue-table th:nth-child(7),
+.issue-table td:nth-child(7){
+    width:130px;
+    text-align:center;
+}
+
+.issue-table th:nth-child(8),
+.issue-table td:nth-child(8){
+    width:110px;
+    text-align:center;
+}

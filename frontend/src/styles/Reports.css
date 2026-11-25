@@ -1,0 +1,256 @@
+/* Page Header */
+.page-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1E293B;
+}
+
+.page-subtitle {
+  color: #64748B;
+}
+
+/* Report Cards */
+.report-card {
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  transition: 0.3s;
+  background: white;
+  font-size: 14px;
+}
+
+.report-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,.12);
+}
+
+.report-card .card-body {
+  padding: 30px;
+}
+
+.report-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.report-card h6 {
+  color: #6B7280;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.report-card h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+
+/* Charts */
+canvas {
+  max-height: 390px;
+}
+
+/* Table */
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background: #2563EB;
+  color: white;
+  border: none;
+}
+
+.table tbody tr:hover {
+  background: #F8FAFC;
+}
+
+.badge {
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+
+.report-table tbody tr{
+    transition:0.25s;
+}
+
+.report-table tbody tr:hover{
+    background:#F8FAFC;
+}
+.report-card th,
+.report-card td {
+  padding: 10px 8px;
+  vertical-align: middle;
+}
+
+/* Production Report Table */
+
+.report-table-card {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+
+.report-table {
+  margin-bottom: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+
+/* Header */
+
+.report-table thead th {
+  background: #2563EB;
+  color: white;
+  font-weight: 600;
+  padding: 10px 8px;
+  font-size: 14px;
+  border: none;
+  text-align: center;
+}
+
+
+/* Rounded header */
+
+.report-table thead th:first-child {
+  border-top-left-radius: 15px;
+}
+
+.report-table thead th:last-child {
+  border-top-right-radius: 15px;
+}
+
+
+/* Body */
+
+.report-table tbody td {
+  padding: 8px 10px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+.report-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+
+/* Product name left */
+
+.report-table tbody td:nth-child(2) {
+  text-align: left;
+}
+
+
+.report-table th:nth-child(1),
+.report-table td:nth-child(1) {
+  width: 80px;
+}
+
+
+.report-table th:nth-child(2),
+.report-table td:nth-child(2) {
+  width: 150px;
+}
+
+
+.report-table th:nth-child(3),
+.report-table td:nth-child(3) {
+  width: 100px;
+}
+
+
+.report-table th:nth-child(4),
+.report-table td:nth-child(4) {
+  width: 120px;
+}
+
+.report-table-wrapper {
+  overflow-x: auto;
+}
+
+
+.report-table {
+  min-width: 900px;
+}
+
+/* ==========================
+   REPORT STATUS
+========================== */
+
+.status-badge{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.status-completed{
+    background:#DCFCE7;
+    color:#15803D;
+}
+
+.status-running{
+    background:#DBEAFE;
+    color:#2563EB;
+}
+
+.status-delayed{
+    background:#FEE2E2;
+    color:#DC2626;
+}
+
+.status-default{
+    background:#E5E7EB;
+    color:#6B7280;
+}
+
+/* Report Dashboard Icon */
+
+.report-card-icon{
+    width:64px;
+    height:64px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+}
+
+/* Products */
+
+.report-products{
+    background:#DBEAFE;
+    color:#2563EB;
+}
+
+/* Work Orders */
+
+.report-workorders{
+    background:#E0F2FE;
+    color:#0EA5E9;
+}
+
+/* Produced */
+
+.report-produced{
+    background:#DCFCE7;
+    color:#22C55E;
+}
+
+/* Delayed */
+
+.report-delayed{
+    background:#FEE2E2;
+    color:#EF4444;
+}

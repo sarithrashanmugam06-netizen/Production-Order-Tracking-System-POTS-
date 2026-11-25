@@ -1,0 +1,121 @@
+/* STATUS */
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* Delayed */
+.status-delayed {
+  background: #fdecec;
+  color: #dc2626;
+}
+
+.status-delayed .status-dot {
+  background: #ef4444;
+}
+
+/* Completed */
+.status-completed {
+  background: #e8f7ef;
+  color: #166534;
+}
+
+.status-completed .status-dot {
+  background: #15803d;
+}
+
+/* Running */
+.status-running {
+  background: #e6f4ff;
+  color: #0369a1;
+}
+
+.status-running .status-dot {
+  background: #0284c7;
+}
+
+/* Pending */
+.status-pending {
+  background: #fff7e6;
+  color: #d97706;
+}
+
+.status-pending .status-dot {
+  background: #f59e0b;
+}
+
+/* Approved */
+.status-approved {
+  background: #edf4ff;
+  color: #2563eb;
+}
+
+.status-approved .status-dot {
+  background: #2563eb;
+}
+
+/* Draft */
+.status-draft {
+  background: #eef2f7;
+  color: #64748b;
+}
+
+.status-draft .status-dot {
+  background: #64748b;
+}
+
+/* In Progress */
+.status-progress {
+  background: #eafaf1;
+  color: #15803d;
+}
+
+.status-progress .status-dot {
+  background: #16a34a;
+}
+
+/* On Hold */
+.status-hold {
+  background: #fff4e8;
+  color: #d97706;
+}
+
+.status-hold .status-dot {
+  background: #ea580c;
+}
+
+/* PRIORITY */
+
+.priority-badge {
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.priority-high {
+  background: #fdecec;
+  color: #dc2626;
+}
+
+.priority-medium {
+  background: #fff4dc;
+  color: #d97706;
+}
+
+.priority-low {
+  background: #edf4ff;
+  color: #2563eb;
+}

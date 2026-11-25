@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+.main-content {
+  margin-left: var(--sidebar-w);
+  margin-top: var(--navbar-h);
+  padding: 28px 32px 40px;
+  min-height: calc(100vh - var(--navbar-h));
+  background: var(--bg);
+}
+
+@media (max-width: 767.98px) {
+  .main-content {
+    padding: 20px 16px 32px;
+  }
+}

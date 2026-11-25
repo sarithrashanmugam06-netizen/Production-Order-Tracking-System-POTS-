@@ -1,0 +1,113 @@
+.user-card {
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    min-height: 120px;
+}
+
+.user-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.user-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.user-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #575a5f;
+    margin-bottom: 8px;
+}
+
+.user-card-value {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.table-container{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.users-table{
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.users-table thead{
+    background:#0F172A;
+    color : white;
+}
+
+.users-table thead th{
+    background:#2563EB !important;
+    color:white;
+    font-weight:600;
+    border:none;
+    padding:16px;
+    vertical-align:middle;
+}
+
+.users-table tbody td{
+    vertical-align:middle;
+    padding:14px;
+}
+
+.users-table tbody tr:hover{
+    background:#F8FAFC;
+}
+
+.modal-content{
+    border-radius:18px;
+    border:none;
+}
+
+.modal-body{
+    padding:30px;
+}
+
+.modal-footer{
+    border-top:none;
+    padding:20px 30px;
+}
+
+
+/* ==========================
+   USER STATUS
+========================== */
+
+.status-badge{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.status-active{
+    background:#DCFCE7;
+    color:#15803D;
+}
+
+.status-inactive{
+    background:#FEE2E2;
+    color:#DC2626;
+}
+
+.status-default{
+    background:#E5E7EB;
+    color:#6B7280;
+}
+
+
+
